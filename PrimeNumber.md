@@ -5,13 +5,6 @@ def isPrime(n):
             if i==1:
                 return True
             return False
-"""def isPrime(n):
-    if n<2:
-        return"Not prime"
-    for i in range(2,int(n**0.5)+1):
-        if n%i==0:
-            return False
-    return True"""
 
 def primeNo10001(n):
     numOfPrimes=0
