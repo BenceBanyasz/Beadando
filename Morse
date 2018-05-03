@@ -12,7 +12,7 @@ morseToEng_dict={'.-' : 'A', '-...' : 'B', '-.-.' : 'C', '-..' : 'D', '.' : 'E',
                  '----.' : '9'}
 print(engToMorse_Dict.values())
 
-answer=input('EngToMorse(1) or MorseToEng(2): ')
+answer=input('EngToMorse(1) or MorseToEng(2):')
 
 string=input("Give a string: ")
 string=string.upper()
