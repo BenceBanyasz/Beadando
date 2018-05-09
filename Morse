@@ -35,5 +35,6 @@ elif answer=='2':
             letters=j.split('   ')
             for k in letters:
                 print(morseToEng_dict[k],end='')
+            print(' ',end='')
         else:
             print(' ' + morseToEng_dict[j],end=' ')
