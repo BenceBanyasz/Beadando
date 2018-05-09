@@ -15,27 +15,28 @@ morseToEng_dict={'.-' : 'A', '-...' : 'B', '-.-.' : 'C', '-..' : 'D', '.' : 'E',
                  '-.--.' : '(', '-.--.-' : ')', '.-...' : '&', '---...' : ':', '-.-.-.' : ';', '-...-' : '=', '.-.-.' : '+',
                  '-....-' : '-', '..--.-' : '_', '.-..-.' : '"', '...-..-' : '$', '.--.-.' : '@'}
 
-answer=input('EngToMorse(1) or MorseToEng(2): ')
+#answer=input('EngToMorse(1) or MorseToEng(2): ')
 
 string=input("Give a string: ")
 string=string.upper()
 
 
-if answer=='1':
-    for i in string:
-        if i==' ':
-            print('      ',end=' ')
-        else:
-            print(engToMorse_Dict[i],end='   ')
-
-elif answer=='2':
+if string[0]=='.' or string[0]=='-':
     wordslist = string.split('       ')
-    #print(wordslist)
+    # print(wordslist)
     for j in wordslist:
         if '   ' in j:
-            letters=j.split('   ')
+            letters = j.split('   ')
             for k in letters:
-                print(morseToEng_dict[k],end='')
-            print('',end=' ')
+                print(morseToEng_dict[k], end='')
+            print('', end=' ')
         else:
-            print(morseToEng_dict[j],end=' ')
+            print(morseToEng_dict[j], end=' ')
+
+
+else:
+    for i in string:
+        if i == ' ':
+            print('      ', end=' ')
+        else:
+            print(engToMorse_Dict[i], end='   ')
