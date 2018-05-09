@@ -37,4 +37,4 @@ elif answer=='2':
                 print(morseToEng_dict[k],end='')
             print(' ',end='')
         else:
-            print(' ' + morseToEng_dict[j],end=' ')
+            print(morseToEng_dict[j],end=' ')
