@@ -5,7 +5,7 @@ def isPrime(n):
     return True
 
 
-def _stPrime(n):
+def stPrime(n):
     numberOfPrimes=0
     prime=1
     while numberOfPrimes<n:
@@ -14,4 +14,4 @@ def _stPrime(n):
             numberOfPrimes+=1
     return prime
 
-print(_stPrime(10001))
+print(stPrime(10001))
